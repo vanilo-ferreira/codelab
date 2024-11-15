@@ -1,35 +1,72 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import codelab from "./assets/codelab.svg";
+import litheart from "./assets/litheart.svg";
+import heart from "./assets/heart.svg";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <header className="topo">
+          <img className="logo" src={codelab} alt="Codelab logo" />
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="Pesquisar no blog"
+          />
+        </header>
+        <main>
+          <div>
+            <div>
+              <p>17 de ago, 2024</p>
+              <img src={litheart} alt="Lit Heart" />
+            </div>
+            <div>
+              <h2>O que é linguagem de programação? Conheça as principais</h2>
+              <p>
+                Uma das mais populares vertentes da tecnologia da informação, a
+                área de programação segue tendo muita demanda de trabalho
+                justamente pela velocidade com que dispositivos tecnológicos vêm
+                avançando.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <p>17 de ago, 2024</p>
+              <img src={heart} alt="Heart" />
+            </div>
+            <div>
+              <h2>O que é linguagem de programação? Conheça as principais</h2>
+              <p>
+                Uma das mais populares vertentes da tecnologia da informação, a
+                área de programação segue tendo muita demanda de trabalho
+                justamente pela velocidade com que dispositivos tecnológicos vêm
+                avançando.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <p>17 de ago, 2024</p>
+              <img src={litheart} alt="Lit Heart" />
+            </div>
+            <div>
+              <h2>O que é linguagem de programação? Conheça as principais</h2>
+              <p>
+                Uma das mais populares vertentes da tecnologia da informação, a
+                área de programação segue tendo muita demanda de trabalho
+                justamente pela velocidade com que dispositivos tecnológicos vêm
+                avançando.
+              </p>
+            </div>
+          </div>
+        </main>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
