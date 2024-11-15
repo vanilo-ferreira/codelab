@@ -1,3 +1,5 @@
+import './App.css'
+
 import codelab from "./assets/codelab.svg";
 import litheart from "./assets/litheart.svg";
 import heart from "./assets/heart.svg";
