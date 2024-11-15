@@ -9,6 +9,7 @@ function App() {
         <header className="topo">
           <img className="logo" src={codelab} alt="Codelab logo" />
           <input
+          className="search"
             type="text"
             id="search"
             name="search"
