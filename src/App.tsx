@@ -3,6 +3,7 @@ import './App.css'
 import codelab from "./assets/codelab.svg";
 import litheart from "./assets/litheart.svg";
 import heart from "./assets/heart.svg";
+import { Card } from './components/Card';
 
 function App() {
   return (
@@ -43,7 +44,9 @@ function App() {
           </p>
         </div>
 
-        <div className="card">
+        <Card />
+
+        {/* <div className="card">
           <div className="cardTopo">
             <p className="cardDate">21 de jul, 2024</p>
             <img className="cardIcon" src={heart} alt="Heart" />
@@ -52,7 +55,7 @@ function App() {
           <p className="cardText">
             Quem navega na internet, certamente já percebeu que ela conta com diversos recursos para tornar a nossa vida mais fácil. Entre essas opções podemos mencionar os hiperlinks – uma palavra ou termo clicável que direciona o leitor.
           </p>
-        </div>
+        </div> */}
       </main>
     </>
   );
