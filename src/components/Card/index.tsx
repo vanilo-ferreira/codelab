@@ -1,21 +1,25 @@
 import "./style.css";
 import heart from "../../assets/heart.svg";
+import litheart from "./assets/litheart.svg";
 
-export const Card = () => {
+type Props = {
+  title: string;
+  description: string;
+  date: string;
+};
+
+export const Card = ({title, description, date}: Props) => {
   return (
     <div className="card">
       <div className="cardTopo">
-        <p className="cardDate">21 de jul, 2024</p>
+        <p className="cardDate">{date}</p>
         <img className="cardIcon" src={heart} alt="Heart" />
       </div>
       <h2 className="cardTitle">
-        Por que os hiperlinks são azuis em sua maioria?
+        {title}
       </h2>
       <p className="cardText">
-        Quem navega na internet, certamente já percebeu que ela conta com
-        diversos recursos para tornar a nossa vida mais fácil. Entre essas
-        opções podemos mencionar os hiperlinks – uma palavra ou termo clicável
-        que direciona o leitor.
+        {description}
       </p>
     </div>
   );
