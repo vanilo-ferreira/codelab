@@ -1,0 +1,33 @@
+.topo {
+  display: flex;
+  flex-direction: column;
+  height: 283px;
+  background-color: #17171a;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 170px;
+  height: 51px;
+  margin-bottom: 30px;
+}
+
+.search {
+  width: 1216px;
+  height: 56px;
+  background-color: #202024;
+  border: none;
+  color: white;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+#search::placeholder {
+  color: #afabb6;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.2px;
+  padding: 10px;
+}
